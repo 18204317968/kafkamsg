@@ -1,38 +1,27 @@
 package com.bonc.kafkamsg;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+    public static void main(String[] args) {
+//    	Map<String,List<String>> map=new Hashtable<String,List<String>>();
+//    	List<String> list=new ArrayList<String>();
+//    	list.add("");
+//    	list.add("a");
+//    	list.add("a");
+//    	list.add("a");
+//    	list.add("a");
+//    	list.add("a");
+//    	list.add("a");
+//    	map.put("nid", list);
+//		String json=JSON.toJSONString(map);
+//		System.out.println(json);
+    	String s=Resource.BEGIN+"aaa\\aaaaa"+Resource.BEGIN+"jjjjj\\jjjj"+Resource.BEGIN+"jjjjj\\jjjj";
+    	String n=s.replace("\\", " ");
+    	System.out.println(n);
+	}
 }
